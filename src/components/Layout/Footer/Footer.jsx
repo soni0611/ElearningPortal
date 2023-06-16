@@ -1,8 +1,9 @@
 import { Box, Heading, HStack, Stack, VStack } from '@chakra-ui/react';
 import React from 'react';
 import {
-  TiSocialYoutubeCircular,
+  
   TiSocialInstagramCircular,
+  TiSocialLinkedinCircular,
 } from 'react-icons/ti';
 import { DiGithub } from 'react-icons/di';
 const Footer = () => {
@@ -14,7 +15,7 @@ const Footer = () => {
           <Heading
             fontFamily={'body'}
             size="sm"
-            children="@6 Pack Programmer"
+            children="&copy; Shivam Soni"
             color={'yellow.400'}
           />
         </VStack>
@@ -25,13 +26,13 @@ const Footer = () => {
           color={'white'}
           fontSize="50"
         >
-          <a href="https://youtube.com/6packprogrammer" target={'blank'}>
-            <TiSocialYoutubeCircular />
+          <a href="https://www.linkedin.com/in/shivam--soni/" target={'blank'}>
+            <TiSocialLinkedinCircular />
           </a>
-          <a href="https://instagram.com/meabhisingh" target={'blank'}>
+          <a href="https://www.instagram.com/soni_007_/" target={'blank'}>
             <TiSocialInstagramCircular />
           </a>
-          <a href="https://github.com/meabhisingh" target={'blank'}>
+          <a href="https://github.com/soni0611" target={'blank'}>
             <DiGithub />
           </a>
         </HStack>

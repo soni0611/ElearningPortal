@@ -19,17 +19,17 @@ const Founder = () => (
   <Stack direction={['column', 'row']} spacing={['4', '16']} padding={'8'}>
     <VStack>
       <Avatar
-        src="https://avatars.githubusercontent.com/u/25058652"
+        src="https://avatars.githubusercontent.com/u/43567511?v=4"
         boxSize={['40', '48']}
       />
       <Text children="Co-Founder" opacity={0.7} />
     </VStack>
 
     <VStack justifyContent={'center'} alignItems={['center', 'flex-start']}>
-      <Heading children="Abhishek Singh" size={['md', 'xl']} />
+      <Heading children="Shivam Soni" size={['md', 'xl']} />
       <Text
         textAlign={['center', 'left']}
-        children={`Hi, I am a full-stack developer and a teacher.
+        children={`Hi, I am a full-stack developer.
       Our mission is to provide quality content at reasonable price.`}
       />
     </VStack>

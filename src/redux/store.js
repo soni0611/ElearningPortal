@@ -19,4 +19,8 @@ const store = configureStore({
 
 export default store;
 
+//Production URL
 export const server='https://learn4u.onrender.com/api/v1'
+
+//Development URL
+// export const server='http://localhost:4000/api/v1'

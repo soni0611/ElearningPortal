@@ -6,6 +6,7 @@ import {
   DrawerHeader,
   DrawerOverlay,
   HStack,
+  Image,
   useDisclosure,
   VStack,
 } from '@chakra-ui/react';
@@ -15,7 +16,7 @@ import { RiDashboardFill, RiLogoutBoxLine, RiMenu5Fill } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { logout } from '../../../redux/actions/user';
-
+import Logo from "../../../assets/images/Logo.JPG"
 
 const LinkButton = ({ url = '/', title = 'Home', onClose }) => (
   <Link onClick={onClose} to={url}>
@@ -42,7 +43,7 @@ const Header = ({ isAuthenticated = false, user }) => {
 
       <Button
         onClick={onOpen}
-        colorScheme={'yellow'}
+        colorScheme={'gray'}
         width="12"
         height={'12'}
         rounded="full"
@@ -57,7 +58,9 @@ const Header = ({ isAuthenticated = false, user }) => {
       <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
         <DrawerContent>
-          <DrawerHeader borderBottomWidth={'1px'}>COURSE BUNDLER</DrawerHeader>
+          <DrawerHeader borderBottomWidth={'1px'}>
+          <Image src={Logo} alt="Logo" height='4rem' />
+            Learn 4 U</DrawerHeader>
 
           <DrawerBody>
             <VStack spacing={'4'} alignItems="flex-start">
