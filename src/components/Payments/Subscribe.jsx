@@ -13,7 +13,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { buySubscription } from '../../redux/actions/user';
 import { server } from '../../redux/store';
 import toast from 'react-hot-toast';
-import logo from '../../assets/images/logo.png';
+import Logo from '../../assets/images/Logo.JPG';
 
 const Subscribe = ({ user }) => {
   const dispatch = useDispatch();
@@ -46,9 +46,9 @@ const Subscribe = ({ user }) => {
       const openPopUp = () => {
         const options = {
           key,
-          name: 'CourseBundler',
+          name: 'Learn 4 U',
           description: 'Get access to all premium content',
-          image: logo,
+          image: Logo,
           subscription_id: subscriptionId,
           callback_url: `${server}/paymentverification`,
           prefill: {
